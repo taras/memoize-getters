@@ -14,6 +14,7 @@
     "prepare": "npm test",
     "start": "jest --watch"
   },
+  "keywords": ["memoize", "es6-classes", "immutability", "react"],
   "files": [
     "README.md",
     "src",
