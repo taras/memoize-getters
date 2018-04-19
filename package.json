@@ -1,0 +1,70 @@
+{
+  "name": "memoized-model",
+  "version": "0.9.0",
+  "main": "dist/memoized-model.cjs.js",
+  "module": "dist/memoized-model.esm.js",
+  "browser": "dist/memoized-model.umd.js",
+  "description": "Converts ES6 classes into classes with memoized getters",
+  "scripts": {
+    "build": "rollup --config",
+    "bench": "node ./scripts/bench",
+    "lint": "eslint src",
+    "pretest": "npm run build && npm run lint",
+    "test": "jest",
+    "prepare": "npm test",
+    "start": "jest --watch"
+  },
+  "files": [
+    "README.md",
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taras/memoized-model.git"
+  },
+  "author": "Taras Mankovski <taras@wrktg.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taras/memoized-model/issues"
+  },
+  "homepage": "https://github.com/taras/memoized-model#readme",
+  "dependencies": {
+    "object.getownpropertydescriptors": "2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "22.4.3",
+    "benchmark": "2.1.4",
+    "cli-table2": "0.2.0",
+    "colors": "1.2.1",
+    "eslint": "4.19.1",
+    "eslint-plugin-prefer-let": "1.0.1",
+    "jest": "22.4.3",
+    "ora": "2.0.0",
+    "regenerator-runtime": "0.11.1",
+    "rollup": "0.57.1",
+    "rollup-plugin-babel": "4.0.0-beta.3",
+    "rollup-plugin-filesize": "1.5.0"
+  },
+  "jest": {
+    "testRegex": "(/tests/.*|\\.(test|spec))\\.(js)$",
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "globalSetup": "./scripts/build.js",
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>/node_modules"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/dist/"
+    ],
+    "moduleNameMapper": {
+      "memoized-model": "<rootDir>/dist/memoized-model.umd.js"
+    }
+  }
+}
