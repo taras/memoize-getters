@@ -2,6 +2,32 @@
 
 Create React friendly ES6 class instances with cached getters.
 
+## Installation
+
+```bash
+npm install --save memoize-getters
+# or 
+yarn add memoize-getters
+```
+
+## Use
+
+```js
+class Event {
+  get date() {
+    return new Date();
+  }
+}
+
+let MemoizedEvent = memoizeGetters(class MemoizedEvent extends Event {});
+
+let event = new MemoizedEvent();
+
+event.date === event.date
+```
+
+## Background
+
 You have to be very careful when working in ES6 class instances in React to not 
 inadvertably introduce performance regressions and subtle bugs. This is in part caused
 by the fact that ES6 classes were not designed for immutable environments that use 
