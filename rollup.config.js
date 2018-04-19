@@ -13,7 +13,7 @@ module.exports = {
   external,  
   output: [
     {
-      name: "memoized-model",
+      name: "memoize-getters",
       file: pkg.browser,
       globals,
       format: "umd"
