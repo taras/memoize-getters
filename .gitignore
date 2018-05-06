@@ -2,4 +2,3 @@
 /yarn.lock
 /dist
 /**/.esm-cache
-/package-lock.json

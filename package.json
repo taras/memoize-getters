@@ -1,6 +1,6 @@
 {
   "name": "memoize-getters",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "main": "dist/memoize-getters.cjs.js",
   "module": "dist/memoize-getters.esm.js",
   "browser": "dist/memoize-getters.umd.js",
