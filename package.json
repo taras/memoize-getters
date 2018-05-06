@@ -14,7 +14,12 @@
     "prepare": "npm test",
     "start": "jest --watch"
   },
-  "keywords": ["memoize", "es6-classes", "immutability", "react"],
+  "keywords": [
+    "memoize",
+    "es6-classes",
+    "immutability",
+    "react"
+  ],
   "files": [
     "README.md",
     "src",
@@ -31,7 +36,7 @@
   },
   "homepage": "https://github.com/taras/memoize-getters#readme",
   "dependencies": {
-    "object.getownpropertydescriptors": "2.0.3"
+    "get-prototype-descriptors": "0.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.44",

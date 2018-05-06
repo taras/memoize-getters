@@ -1,4 +1,4 @@
-import getPrototypeDescriptors from './get-prototype-descriptors';
+import getPrototypeDescriptors from 'get-prototype-descriptors';
 
 const { assign, defineProperty } = Object;
 
