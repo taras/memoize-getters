@@ -3,7 +3,7 @@ const filesize = require("rollup-plugin-filesize");
 const pkg = require("./package.json");
 
 const globals = {
-  "object.getownpropertydescriptors": "Object.getOwnPropertyDescriptors"
+  "get-prototype-descriptors": "getPrototypeDescriptors"
 };
 
 let external = Object.keys(globals);
