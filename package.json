@@ -52,6 +52,7 @@
     "eslint-plugin-jest": "21.15.0",
     "eslint-plugin-prefer-let": "1.0.1",
     "jest": "22.4.3",
+    "object.getownpropertydescriptors": "2.0.3",
     "ora": "2.0.0",
     "regenerator-runtime": "0.11.1",
     "rollup": "0.57.1",
@@ -64,7 +65,9 @@
       "js",
       "json"
     ],
-    "setupFiles": ["./scripts/shims.js"],
+    "setupFiles": [
+      "./scripts/shims.js"
+    ],
     "globalSetup": "./scripts/build.js",
     "modulePaths": [
       "<rootDir>/src",
