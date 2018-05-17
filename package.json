@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/taras/memoize-getters#readme",
   "dependencies": {
-    "get-prototype-descriptors": "0.5.0"
+    "get-prototype-descriptors": "0.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.44",
@@ -64,6 +64,7 @@
       "js",
       "json"
     ],
+    "setupFiles": ["./scripts/shims.js"],
     "globalSetup": "./scripts/build.js",
     "modulePaths": [
       "<rootDir>/src",
